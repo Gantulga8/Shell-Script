@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in *_my.mht       # in my case i'm converting file _my.mht file extention to .my
+do
+  mv "$file" "${file%_my.mht}.my"     
+done
